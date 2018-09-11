@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+
+html {
+  font-family: 'Gugi', cursive;
+  body {
+    background-color: #fbe7e3;
+    box-sizing: border-box;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  h1 {
+    font-size: 5.5rem;
+    letter-spacing: 8px;
+    color: #20344c;
+    z-index: 2;
+    margin-bottom: 1rem;
+    @media only screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  text-align: center;
+  width: 90%;
+  height: 2.5rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 75%;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  margin-right: 0.75rem;
+  font-family: 'Gugi', cursive;
+  border: none;
+  @media only screen and (max-width: 600px) {
+    width: 10rem;
+    height: 3rem;
+    padding: 0;
+    font-size: 1.4rem;
+  }
+}
+
+button {
+  font-family: 'Gugi', cursive;
+  background-color: #e76042;
+  color: #b8d1c6;
+  font-size: 1rem;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  //border-radius: 50%;
+  color: #ffffff;
+  width: 25%;
+  height: 3rem;
+}
+
+.todo {
+  width: 15rem;
+  display: flex;
+  margin-bottom: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo_list {
+  width: 15rem;
+  font-size: 1.5rem;
+  color: #20344c;
+  display: flex;
+  margin-top: 0;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+  @media only screen and (max-width: 600px) {
+    font-size: 1.7rem;
+    margin-top: 0;
+  }
+}
+
+.complete {
+  text-decoration: line-through;
+  color: #b8d1c6;
+}
+
+.clear {
+  padding: 0.5rem;
+  border-radius: 7px;
+  border: none;
+  font-family: 'Gugi', cursive;
+}
+
+.edit,
+.remove {
+  font-size: 1rem;
+}
+
+.edit {
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+}
+
+.mark {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#newItem {
+  width: 20rem;
+  @media only screen and (max-width: 600px) {
+    width: 10rem;
+  }
+}
